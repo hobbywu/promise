@@ -27,6 +27,7 @@ var IS_ERROR = {};
 
 // 参考文章：https://juejin.cn/post/6996943669248933919
 // promise 规范：https://segmentfault.com/a/1190000002452115
+// 源码分析文章：https://blog.csdn.net/fanxw1984/article/details/98079240
 // 获取 obj 对象的 then 属性值
 function getThen (obj) {
   try {
