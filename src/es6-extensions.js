@@ -113,9 +113,9 @@ Promise.all = function (arr) {
             return;
           }
         }
+        
+        // 存放对应的 args 执行的值
       }
-
-      // 存放对应的 args 执行的值
       args[i] = val;
 
       // 没有剩余的元素
@@ -139,7 +139,7 @@ Promise.reject = function (value) {
   });
 };
 
-// 返回一个 promise，一旦迭代器中的某个promise解决或拒绝，返回的 promise就会解决或拒绝。
+// 返回一个 promise，一旦迭代器中的某个 promise 解决或拒绝，返回的 promise 就会解决或拒绝。
 Promise.race = function (values) {
   return new Promise(function (resolve, reject) {
     iterableToArray(values).forEach(function (value) {

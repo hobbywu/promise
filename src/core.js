@@ -2,6 +2,7 @@
 
 var asap = require('asap/raw');
 
+
 function noop () { }
 
 // States:
@@ -23,6 +24,8 @@ function noop () { }
 // extract them to here.
 var LAST_ERROR = null;
 var IS_ERROR = {};
+
+// 参考文章：https://juejin.cn/post/6996943669248933919
 
 // 获取 obj 对象的 then 属性值
 function getThen (obj) {
